@@ -1,0 +1,18 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "2"
+DL_DIR = "${HOME}/downloads/"
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+BBLAYERS ?= " \
+    ${HOME}/yocto_rpi/meta \
+    ${HOME}/yocto_rpi/meta-openembedded/meta-oe \
+    ${HOME}/yocto_rpi/meta-openembedded/meta-multimedia \
+    ${HOME}/yocto_rpi/meta-openembedded/meta-networking \
+    ${HOME}/yocto_rpi/meta-openembedded/meta-perl \
+    ${HOME}/yocto_rpi/meta-openembedded/meta-python \
+    ${HOME}/yocto_rpi/meta-raspberrypi \
+    ${HOME}/yocto_rpi/meta-security \
+    ${HOME}/yocto_rpi/meta-rpi-config \
+"
